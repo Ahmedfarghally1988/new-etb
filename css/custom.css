@@ -26,6 +26,15 @@
     bottom: 0;
     width: 350px;
     background-image: url(../images/banner-mask.png);
+    background-repeat-x: no-repeat;
+}
+
+.img-slider-2{
+    width: 100%;
+}
+
+.img-slider-2:before{
+    display: none;
 }
 
 .img-slider img{
@@ -65,7 +74,7 @@
 }
 
 .banner-form.form-style-1 .form-content{
-    padding: 15px;
+    padding: 30px 0 30px 15px;
 }
 .slider .swiper-container-horizontal>.swiper-pagination-bullets, .slider .swiper-pagination-custom, .slider .swiper-pagination-fraction {
     bottom: 50px;
@@ -110,6 +119,13 @@
     font-size: 18px;
     overflow: hidden;
 }
+
+.main_header_area .bg-header-index {
+    background-image: url("../images/bg-header.webp");
+    background-size: cover;
+}
+
+
 .js-am-common-sale-top-banner p{
     color:#fff;
     text-align: left;
@@ -136,7 +152,7 @@
     height: 40px;
 }
 .table-item input::placeholder{
-    color: #fff;
+    color: #000;
 }
 .table-item span.input-group-addon {
     right: 10px;
@@ -310,4 +326,28 @@ section.events .news-content h4 {
 
 .footer-top {
     padding: 50px 0 0;
+}
+
+.swiper--content--slider{
+    margin-top: 20%;
+}
+
+.header_menu{
+    background: rgb(0 0 0 / 30%);
+}
+
+.header_menu_style_2{
+    background-image: url(../images/bg-header.webp);
+    background-size: cover;
+}
+
+.slider-style-2{
+    height: 75vh !important;
+}
+
+.masonry .brick img{
+    width: 100%;
+}
+.masonry {
+    column-count: 4;
 }
