@@ -145,7 +145,7 @@
                         </li>
                     </ul>
                     <div class="nav-btn">
-                        <a href="#" class="btn btn-orange"> <i class="fa fa-briefcase" aria-hidden="true"></i> Inquire </a>
+                        <a href="#" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <i class="fa fa-briefcase" aria-hidden="true"></i> Inquire </a>
                     </div>
                 </div>
 
@@ -1198,12 +1198,157 @@
     </div>
 </footer>
 
+<a href="#" class="icon-whats" data-bs-toggle="modal" data-bs-target="#MyModal">
+    <div class="text-center">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+</a>
+
+<div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <ul class="w-list">
+                    <li>
+                        <a href="#" target="_blank" class="whats-lan"><i class="fab fa-whatsapp"></i>  English Department  </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="whats-lan"><i class="fab fa-whatsapp"></i> Departamento Español  </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="whats-lan"><i class="fab fa-whatsapp"></i> Dipartimento Italiano</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">New Inquire</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-content">
+                        <div class="form-content-inner w-100">
+                            <div class="table-item form--inq">
+                                <div class="form-group">
+                                    <div class="date-range-inner-wrapper">
+                                        <input id="" class="form-control" placeholder="Name">
+                                        <span class="input-group-addon">
+                                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-item form--inq">
+                                <div class="form-group">
+                                    <div class="date-range-inner-wrapper">
+                                        <input id="" class="form-control" placeholder="E-mail">
+                                        <span class="input-group-addon">
+                                                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-item form--inq">
+                                <div class="form-group">
+                                    <div class="date-range-inner-wrapper">
+                                        <input id="" class="form-control" placeholder="Country">
+                                        <span class="input-group-addon">
+                                                  <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-item form--inq">
+                                <div class="form-group">
+                                    <div class="date-range-inner-wrapper">
+                                        <input id="" class="form-control" placeholder="No. Phone">
+                                        <span class="input-group-addon">
+                                                  <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="table-item form--inq">
+                                        <div class="form-group">
+                                            <select>
+                                                <option> Adult </option>
+                                                <option> 0 </option>
+                                                <option> 1 </option>
+                                                <option> 2 </option>
+                                                <option> 3 </option>
+                                                <option> 4 </option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="table-item form--inq">
+                                        <div class="form-group">
+                                            <select>
+                                                <option> Child </option>
+                                                <option> 0 </option>
+                                                <option> 1 </option>
+                                                <option> 2 </option>
+                                                <option> 3 </option>
+                                                <option> 4 </option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-item form--inq">
+                                <div class="form-group">
+                                    <div class="date-range-inner-wrapper">
+                                        <label>Date</label>
+                                        <input  class="form-control" type="date" placeholder="No. Phone">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-item form--inq">
+                                <div class="form-group">
+                                    <div class="date-range-inner-wrapper">
+                                        <textarea class="form-control" rows="5" placeholder="Notes"></textarea>
+                                        <span class="input-group-addon">
+                                                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div id="back-to-top">
     <a href="#"></a>
 </div>
-
-
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -1213,6 +1358,100 @@
 <script src="js/custom-nav.js"></script>
 <script src="js/custom-swiper2.js"></script>
 <script src="js/custom-singledate.js"></script>
+
+
+<script>
+    $(".show-more").click(function () {
+        if($(".text").hasClass("show-more-height")) {
+            $(this).text("Show Less");
+        } else {
+            $(this).text("Show More");
+        }
+
+        $(".text").toggleClass("show-more-height");
+    });
+
+
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".form-spinner input").each(function (i, spinner) {
+            if ($(this).data("type") === "text") {
+                let index = $(this).data("spinner-index") || 0;
+                let items = $(this).data("spinner-items");
+
+                $(this).val(items[index]);
+            }
+        });
+
+        $(".form-spinner .btn-increment").click(function () {
+            let $this		= $(this);
+            let input		= $this.siblings("input");
+
+            if (input.data("type") === "number") {
+                let step		 = input.attr("step");
+                let oldValue = input.val();
+                let newValue = parseInt(oldValue) + parseInt(step || 1);
+                let maxValue = input.attr("max");
+                let minValue = input.attr("min");
+
+                if (!maxValue || newValue <= maxValue)
+                    input.val(newValue);
+                else if (input.data("spinner-loop"))
+                    input.val(minValue);
+                else
+                    input.val(maxValue);
+            } else if (input.data("type") === "text") {
+                let oldIndex = input.data("spinner-index") || 0;
+                let items 	 = input.data("spinner-items");
+                let newIndex = oldIndex + 1;
+
+                if (newIndex < items.length) {
+                    input.val(items[newIndex]);
+                    input.data("spinner-index", newIndex);
+                } else if (input.data("spinner-loop")){
+                    input.val(items[0]);
+                    input.data("spinner-index", 0);
+                }
+            }
+
+        });
+        $(".form-spinner .btn-decrement").click(function () {
+            let $this		= $(this);
+            let input		= $this.siblings("input");
+
+            if (input.data("type") === "number") {
+                let step		 = input.attr("step");
+                let oldValue = input.val();
+                let newValue = parseInt(oldValue) - parseInt(step || 1);
+                let maxValue = input.attr("max");
+                let minValue = input.attr("min");
+
+                if (!minValue || newValue >= minValue)
+                    input.val(newValue);
+                else if (input.data("spinner-loop"))
+                    input.val(maxValue);
+                else
+                    input.val(minValue);
+            } else if (input.data("type") === "text") {
+                let oldIndex = input.data("spinner-index") || 0;
+                let items 	 = input.data("spinner-items");
+                let newIndex = oldIndex - 1;
+
+                if (newIndex >= 0) {
+                    input.val(items[newIndex]);
+                    input.data("spinner-index", newIndex);
+                } else if (input.data("spinner-loop")){
+                    input.val(items[items.length - 1]);
+                    input.data("spinner-index", items.length - 1);
+                }
+            }
+        });
+    });
+</script>
 
 </body>
 
