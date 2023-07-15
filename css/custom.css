@@ -43,7 +43,7 @@
 }
 
 .slider {
-    height: 90vh !important;
+    height: 80vh !important;
 }
 .swiper-slide:after {
     background: linear-gradient(#000000e8,rgb(255 255 255 / 0%));
@@ -330,7 +330,7 @@ section.events .news-content h4 {
 }
 
 .swiper--content--slider{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .header_menu{
