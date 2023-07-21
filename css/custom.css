@@ -43,7 +43,8 @@
 }
 
 .slider {
-    height: 80vh !important;
+    height: 70vh !important;
+    width: 100%;
 }
 .swiper-slide:after {
     background: linear-gradient(#000000e8,rgb(255 255 255 / 0%));
@@ -91,9 +92,10 @@
 }
 .header-content li a {
     color: #fff !important;
+    line-height: 32px;
 }
 .header-content li {
-
+    padding: 0 20px;
 }
 .btn-close-pop {
     position: absolute;
@@ -141,6 +143,7 @@
 .header_menu .navbar.navbar-default .nav.navbar-nav li a{
     font-size: 17px;
     color:#000;
+    line-height: normal;
 }
 .header-content .links ul li .nice-select span {
     color: #fff;
@@ -290,7 +293,7 @@ section {
 }
 
 .block--pak .room-image{
-    height: 300px;
+    height: 250px;
 }
 
 .block--pak .room-image img{
@@ -298,6 +301,7 @@ section {
 }
 
 .block--pak .room-item{
+    border: 1px solid #ddd;
     margin: 0;
 }
 
@@ -386,7 +390,7 @@ section.breadcrumb-outer {
     font-family: poppins,sans-serif;
 }
 .show-more-height {
-    height: 75px;
+    height: 50px;
     overflow: hidden;
 }
 .show-more {
@@ -405,10 +409,20 @@ section.breadcrumb-outer {
 .news-content {
     padding: 15px 15px;
     background: #fff;
+
+    overflow: hidden;
 }
+
+.news-content>a {
+    float: right;
+}
+
 section.events .news-content.box-tour h4{
     font-size: 14px;
     font-weight: 600;
+    height: 65px;
+    overflow: hidden;
+    padding: 0;
 }
 
 .sidebar-tags li a {
@@ -522,8 +536,8 @@ section.events .news-image img {
 }
 
 .inc--view{
-    list-style-type: disc;
-    padding: 0 0 0 35px;
+    list-style-type: none;
+    padding: 0 0 0 22px;
 }
 .inc--view li{
     font-size: 17px;
@@ -665,7 +679,7 @@ section.events .news-image img {
 
 .room-image{background: #fff}
 .room-item {
-    margin: 0 15px 10px 15px;
+    margin: 0 5px;
 }
 
 .playstore-links{
@@ -687,19 +701,23 @@ section.events .news-image img {
 .icon-inq:hover{
     color: #ddd;
 }
-.breadcrumb.breadcrumb-page {
-    justify-content: start;
-    margin: 15px 0;
+.breadcrumb-page {
+    margin: 0;
     padding: 10px 20px;
     border-radius: 0;
-    border: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    text-align: left;
 }
-.breadcrumb.breadcrumb-page li a{
+.breadcrumb-page li a{
     font-weight: bold;
 }
-.breadcrumb.breadcrumb-page li.active{
+.breadcrumb-page li.active{
     color: #0b5ed7;
     font-weight: bold;
+}
+
+.breadcrumb-page .breadcrumb{
+    justify-content: start;
 }
 
 .style--box{
@@ -728,4 +746,66 @@ section.events .news-image img {
     margin: 0 10px 0 0;
     color: #fff;
     border-radius: 30px;
+}
+section.rooms-style3 .room-item {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0;
+}
+.reviews-style-1 .slider-item {
+    padding: 5px 5px;
+}
+
+section.reviews {
+    background: #eee;
+}
+.footer-copyright {
+    padding: 5px 0 0 0 !important;
+}
+.fixed-top {
+    position: relative;
+}
+.news-item {
+    border: 1px solid #ddd;
+}
+
+.detail-title h1{
+    font-size: 36px;
+    text-transform: none;
+}
+
+.gallery-content ul {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: none;
+}
+
+.gallery-content ul li {
+    border: 0;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    display: inline-block;
+    margin: 0;
+}
+
+.gallery-content ul li a {
+    color: #fff;
+    display: block;
+    height: 100%;
+    line-height: 330px;
+}
+
+.detail-sidebar, .sidebar {
+    position: relative;
+}
+
+.sidebar-form.reservation-form {
+    background: #ddd;
 }
